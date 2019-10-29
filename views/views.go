@@ -11,7 +11,7 @@ var (
 )
 
 func NewView(layout string, files ...string) *View {
-	l
+
 	files = append(files, loyoutFiles()...)
 	t, err := template.ParseFiles(files...)
 
