@@ -37,5 +37,7 @@ func (u *Users) Create(w http.ResponseWriter, r *http.Request) {
 	if err := parseForm(r, &form); err != nil {
 		panic(err)
 	}
-	fmt.Fprintln(w, form)
+	fmt.Fprintln(w, "Email is", form.Email)
+	fmt.Fprintln(w, "Password is", form.Password)
+
 }
